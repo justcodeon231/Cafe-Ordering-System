@@ -1,0 +1,99 @@
+
+Here’s a comprehensive list of keywords used in C++ along with their meanings. These keywords are reserved and cannot be used as identifiers (names of variables, functions, etc.).
+
+1. Control Flow Keywords:
+if: Used to specify a block of code to be executed if a condition is true.
+else: Specifies a block of code to execute if the if condition is false.
+switch: Allows multi-way branching based on the value of a variable.
+case: Defines individual branches within a switch statement.
+default: Specifies a default block to execute if none of the case statements are matched in a switch.
+while: Executes a block of code repeatedly while a condition is true.
+do: Executes a block of code once and then repeats while a condition is true.
+for: Executes a block of code a specified number of times or iterates over a range of values.
+break: Exits the nearest loop or switch statement.
+continue: Skips the rest of the current loop iteration and moves to the next iteration.
+return: Exits a function and optionally returns a value.
+goto: Transfers control to a labeled statement. Its use is discouraged as it makes code harder to follow.
+2. Data Types Keywords:
+int: Declares an integer variable (whole numbers).
+char: Declares a variable of character type (usually a single byte).
+float: Declares a floating-point variable (single precision).
+double: Declares a double-precision floating-point variable.
+bool: Declares a Boolean variable (true or false values).
+void: Indicates that a function does not return a value or that a pointer is generic.
+wchar_t: Declares a wide-character type (used for Unicode or extended character sets).
+short: Declares a short integer (less memory than int).
+long: Declares a long integer (more memory than int).
+3. Type Modifiers:
+signed: Modifies a data type to indicate it can hold both positive and negative values.
+unsigned: Modifies a data type to hold only non-negative (positive) values.
+const: Declares that the value of a variable cannot be changed after its initialization.
+volatile: Tells the compiler not to optimize the variable, as its value can change unexpectedly (e.g., in multi-threaded programs or hardware interactions).
+4. Memory Management:
+new: Allocates dynamic memory for a variable or array.
+delete: Frees dynamic memory allocated by new.
+sizeof: Returns the size, in bytes, of a variable or data type.
+5. Class and Object-Oriented Programming (OOP) Keywords:
+class: Declares a class, which is a blueprint for creating objects (data structures and functions).
+struct: Declares a structure, similar to a class but with default public access.
+union: Declares a union, where all members share the same memory location.
+this: Refers to the current instance of a class (the calling object).
+public: Specifies that members of a class are accessible from outside the class.
+private: Specifies that members of a class are only accessible within the class itself.
+protected: Specifies that members of a class are accessible in the class itself and derived classes.
+virtual: Declares a function that can be overridden in derived classes.
+friend: Grants access to the private and protected members of a class to a specified function or class.
+inline: Suggests that the compiler replace a function call with the function's code to avoid the overhead of calling the function.
+explicit: Used to prevent implicit conversions or constructor calls.
+mutable: Allows a member of a class to be modified even if it is part of an object that is declared as const.
+6. Inheritance and Polymorphism:
+public: Specifies public inheritance, where all public members of the base class remain public in the derived class.
+protected: Specifies protected inheritance, where public members of the base class become protected in the derived class.
+private: Specifies private inheritance, where all members of the base class become private in the derived class.
+virtual: Declares virtual functions, enabling polymorphism.
+override: Ensures that a function in a derived class overrides a virtual function in the base class.
+final: Specifies that a class or virtual method cannot be inherited from or overridden.
+7. Namespaces and Scoping:
+namespace: Declares a named scope that helps to avoid name collisions.
+using: Introduces a name from a namespace into the current scope.
+static: Has different uses:
+Inside a function: Retains its value between function calls.
+Outside a function: Restricts the visibility of the variable or function to the file where it is declared.
+extern: Declares a variable or function that is defined in another file or scope.
+8. Exception Handling:
+try: Defines a block of code where exceptions may occur.
+catch: Defines a block of code to handle exceptions thrown by try.
+throw: Throws an exception that can be caught by catch.
+noexcept: Specifies that a function does not throw exceptions.
+9. Type Casting:
+static_cast: Casts between compatible types at compile-time.
+dynamic_cast: Safely casts objects in an inheritance hierarchy at runtime.
+const_cast: Adds or removes the const qualifier from a variable.
+reinterpret_cast: Casts between unrelated types (dangerous, use cautiously).
+10. Template Keywords:
+template: Declares a template for a generic class or function, allowing the use of types as parameters.
+typename: Used to specify that a dependent name in a template is a type.
+decltype: Inspects the declared type of an expression at compile-time.
+11. Other Miscellaneous Keywords:
+auto: Automatically infers the type of a variable from its initializer.
+register: Suggests that the variable be stored in a CPU register (largely ignored by modern compilers).
+typedef: Creates a new name (alias) for an existing type.
+typeid: Returns type information at runtime (used with RTTI).
+alignof: Yields the alignment requirement of a type.
+alignas: Specifies the alignment of a type or object.
+constexpr: Specifies that the value of a variable or function can be evaluated at compile-time.
+decltype: Used to query the type of an expression.
+nullptr: Represents a null pointer in C++.
+enum: Declares an enumeration, a user-defined type consisting of a set of named integral constants.
+enum class: Strongly-typed enumerations, introduced in C++11.
+operator: Declares a function that overloads an operator.
+static_assert: Asserts conditions at compile time.
+bitand, bitor, xor, not, or, and: These are alternative spellings for &, |, ^, !, ||, and &&, respectively.
+12. Coroutines (C++20):
+co_await: Pauses the coroutine until a result is ready.
+co_yield: Provides a value from the coroutine and pauses its execution.
+co_return: Ends the coroutine and optionally returns a value.
+C++20 Keywords (New):
+concept: Declares a template constraint, defining the requirements for template arguments.
+requires: Used in conjunction with concept to specify the conditions a template parameter must satisfy.
+This list includes all of the reserved keywords in C++ (up to C++20) along with their basic meanings and uses. Understanding these keywords is essential for writing and interpreting C++ code effectively.
