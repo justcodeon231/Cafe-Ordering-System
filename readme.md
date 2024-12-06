@@ -61,7 +61,3 @@ This project was developed as part of a school assignment. Contributions, sugges
 ## License
 
 This project is for educational purposes only and is not intended for commercial use. Please respect the terms of use of any third-party libraries or dependencies used in this project.
-
----
-
-Feel free to modify or expand on any sections based on specific features or requirements of your project. This README provides a clear and comprehensive overview for users and developers interested in the Cafeteria Ordering System.
